@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Product } from "../models/Product";
 import Catalog from "../../features/catalog/Catalog";
+import { Typography } from "@mui/material";
 const App = () => {
   const [products, setProducts] = useState<Product[]>([]);
   useEffect(() => {
@@ -17,15 +18,15 @@ const App = () => {
         id: prev.length + 101,
         brand: "sss",
         description: "add",
-        pictureUrl: "sad",
+        pictureUrl: "/images/products/glove-code1.png",
       },
     ]);
   };
   return (
-    <div>
-      <h1>Re-Store</h1>
+    <>
+      <Typography variant="h1">Re-Store</Typography>
       <Catalog products={products} onAddProductHandler={addProductHandler} />
-    </div>
+    </>
   );
 };
 
