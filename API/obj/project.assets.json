@@ -1330,23 +1330,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\2629863\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\aktas\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\ComponentOne\\WinForms Edition\\bin\\v6\\": {},
+    "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\React\\NeilCummşngs\\ReStore\\API\\API.csproj",
+      "projectUniqueName": "D:\\react-projects\\ReStore\\ReStore\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "E:\\React\\NeilCummşngs\\ReStore\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\2629863\\.nuget\\packages\\",
-      "outputPath": "E:\\React\\NeilCummşngs\\ReStore\\API\\obj\\",
+      "projectPath": "D:\\react-projects\\ReStore\\ReStore\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\aktas\\.nuget\\packages\\",
+      "outputPath": "D:\\react-projects\\ReStore\\ReStore\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\ComponentOne\\WinForms Edition\\bin\\v6\\",
+        "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\2629863\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aktas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\ComponentOne.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1354,9 +1362,11 @@
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\ComponentOne\\Packages": {},
+        "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
-        "https://tfs.jandarma.gov.tr/tfs/IBS_Yazilim_Surec_Yonetimi/_packaging/Juga_Repo/nuget/v3/index.json": {}
+        "https://pkgs.dev.azure.com/jugadev/Juga/_packaging/juga-nuget/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
@@ -1407,7 +1417,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
