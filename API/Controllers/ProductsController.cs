@@ -11,13 +11,12 @@ using Microsoft.Extensions.Logging;
 
 namespace API.Controllers;
 
-[Route("api/[controller]")]
-public class ProductsController : Controller
+public class ProductsController : BaseApiController
 {
     private readonly ILogger<ProductsController> _logger;
     private readonly StoreContext _context;
 
-    public ProductsController(ILogger<ProductsController> logger,StoreContext context)
+    public ProductsController(ILogger<ProductsController> logger, StoreContext context)
     {
         _logger = logger;
         _context = context;
@@ -26,15 +25,15 @@ public class ProductsController : Controller
     public async Task<ActionResult<List<Product>>> GetProducts()
     {
 
-        var products =  await _context.Products.ToListAsync();
+        var products = await _context.Products.ToListAsync();
         return Ok(products);
     }
- [HttpGet("{id}")]
-    public async  Task<ActionResult<Product>> GetProduct(int id)
+    [HttpGet("{id}")]
+    public async Task<ActionResult<Product>> GetProduct(int id)
     {
 
-        var product =  await _context.Products.FindAsync(id);
+        var product = await _context.Products.FindAsync(id);
         return Ok(product);
     }
-    
+
 }

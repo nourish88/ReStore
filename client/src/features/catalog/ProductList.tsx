@@ -9,11 +9,11 @@ interface Props {
 const ProductList = ({ products }: Props) => {
   return (
     <Grid container spacing={4}>
-      {products.map((product) => (
+      {products.map(product =>
         <Grid key={product.id} item xs={3}>
           <ProductCard product={product} />
         </Grid>
-      ))}
+      )}
     </Grid>
   );
 };
