@@ -33,7 +33,8 @@ public class ProductsController : BaseApiController
     {
 
         var product = await _context.Products.FindAsync(id);
-        return Ok(product);
+        if (product == null) return NotFound();
+        return product;
     }
 
 }

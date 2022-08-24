@@ -6,14 +6,15 @@ import {
   TableCell,
   TableContainer,
   TableRow,
-  TextField,
   Typography
 } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Product } from "../../app/models/Product";
-import axios from "axios";
+
 import agent from "../../app/api/agent";
+import NotFound from "../../app/errors/NotFound";
+import LoadingComponent from "../../app/layout/LoadingComponent";
 export default function ProductDetails() {
   const [product, setProducts] = useState<Product | null>(null);
   const [loading, setLoading] = useState(true);
@@ -24,17 +25,17 @@ export default function ProductDetails() {
       //   .get(`https://localhost:5001/api/products/${id}`)
       agent.Catalog
         .details(+id)
-        .then(response => setProducts(response.data))
-        .catch(error => console.log(error.message))
+        .then(response => setProducts(response))
+        .catch(error => console.log(error.response))
         .finally(() => setLoading(false));
     },
     [id]
   );
   if (loading) {
-    return <h1>Loading</h1>;
+    return <LoadingComponent />;
   }
   if (!product) {
-    return <h1>No Product Found</h1>;
+    return <NotFound />;
   }
   return (
     <Grid container spacing={2}>

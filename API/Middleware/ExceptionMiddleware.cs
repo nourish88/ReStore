@@ -22,6 +22,7 @@ public class ExceptionMiddleware
         _next = next;
         _env = env;
         _logger = logger;
+
     }
 
     public async Task InvokeAsync(HttpContext context)
